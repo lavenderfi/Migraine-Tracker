@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import {useDispatch, useSelector} from 'react-redux'
 import {useNavigate, Link} from 'react-router-dom'
-import {setUser} from '../../store/auth/user'
-import {logIn, logInGoogle} from '../../store/auth'
+import { setUser } from '../store/user'
+import { logIn, logInGoogle } from '../store/auth'
 
 const LogIn = () => {
   const dispatch = useDispatch()

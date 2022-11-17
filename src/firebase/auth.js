@@ -1,4 +1,4 @@
-import {app, db} from './db.js'
+import {app, db} from './firebase.js'
 import {
   GoogleAuthProvider,
   getAuth,
@@ -7,9 +7,6 @@ import {
   createUserWithEmailAndPassword,
   sendPasswordResetEmail,
   signOut,
-  onAuthStateChanged,
-  setPersistence,
-  browserSessionPersistence,
 } from 'firebase/auth'
 import {
   query,
